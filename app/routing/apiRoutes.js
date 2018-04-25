@@ -1,27 +1,17 @@
-var server = require("../../server");
-var friends = require("../data/friends");
-
-
+var path = require('path');
 // Sets up for express to handle data parsing
 // =============================================================
-server.app.use(server.bodyParser.urlencoded({ extended: true }));
-server.app.use(server.bodyParser.json());
-// 
 
 // ROUTES
 // =============================================================
-server.app.get("api/friends", function (req, res) {
+app.get("api/friends", function (req, res) {
     return res.json(friends.friends);
 });
 
-server.app.post("/api/friends", function (req, res) {
-    let newfriend = req.body;
+app.post("/api/friends", function (req, res) {
+    let userData = req.body;
 
-    newfriend.routeName = newfriend.name.replace(/\s+/g, "").toLowerCase();
-    console.log(newfriend);
+    userData.routeName = userData.name.replace(/\s+/g, "").toLowerCase();
+    console.log(userData);
 
 });
-
-
-
-server.listen;
