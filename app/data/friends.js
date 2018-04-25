@@ -5,20 +5,14 @@ var server = require("../../server");
 // =============================================================
 var friends = [
     {
-        routeName: "David",
-        firstName: "David",
-        lastName: "Vizena",
-        sex: "male",
-        age: 31,
-        location: "Texas"
+    name: "David",
+    photo: "https://pbs.twimg.com/profile_images/2995115958/a8aecbaf7df5cacaeb4fa5592752218d_400x400.jpeg",
+    scores: []  
     },
     {
-        routeName: "Brant",
-        firstName: "Brant",
-        lastName: "Campodonico",
-        sex: "male",
-        age: 25,
-        location: "Texas"
+        name: "Brant",
+        photo: "https://i.ytimg.com/vi/qZwEqFfT69A/maxresdefault.jpg",
+        scores: []
     }
 ];
 
